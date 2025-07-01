@@ -37,7 +37,7 @@ const Hero = () => {
               <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl animate-pulse-glow">
                 <img
                   src="/lovable-uploads/6ec500f8-9bac-4312-9fc0-8a752aff9519.png"
-                  alt="Profile"
+                  alt="Aparna Gupta"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -47,7 +47,7 @@ const Hero = () => {
 
           {/* Name and Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-cyan-200 animate-fade-in">
-            Your Name
+            Aparna Gupta
           </h1>
           
           <div className="text-2xl md:text-4xl font-light mb-8 text-purple-300 min-h-[3rem]">
@@ -57,19 +57,25 @@ const Hero = () => {
 
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
             Passionate about creating innovative solutions with cutting-edge technologies. 
-            Transforming ideas into reality through code, design, and dedication.
+            Specializing in React.js, Node.js, and modern web development with a focus on cybersecurity and AI.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <button className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl glow-effect">
+            <button 
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+              className="group relative px-8 py-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-full text-white font-semibold text-lg transition-all duration-300 hover:scale-105 hover:shadow-xl glow-effect"
+            >
               <span className="relative z-10">View My Work</span>
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-700 to-cyan-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
             
-            <button className="px-8 py-4 border-2 border-purple-500 rounded-full text-purple-300 font-semibold text-lg transition-all duration-300 hover:bg-purple-500 hover:text-white hover:scale-105">
-              Download Resume
-            </button>
+            <a
+              href="mailto:aparnagupta.302003@gmail.com"
+              className="px-8 py-4 border-2 border-purple-500 rounded-full text-purple-300 font-semibold text-lg transition-all duration-300 hover:bg-purple-500 hover:text-white hover:scale-105"
+            >
+              Contact Me
+            </a>
           </div>
 
           {/* Scroll Indicator */}

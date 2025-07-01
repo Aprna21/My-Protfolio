@@ -11,16 +11,17 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 animate-slide-in-left">
               <p className="text-lg text-gray-300 leading-relaxed">
-                Hello! I'm a passionate Full Stack Developer with a keen eye for creating 
-                exceptional digital experiences. My journey in web development started with 
-                curiosity and has evolved into a deep love for crafting elegant solutions 
-                to complex problems.
+                Hello! I'm Aparna Gupta, a passionate Full Stack Developer with expertise in 
+                modern web technologies and cybersecurity. Currently pursuing BTECH-C.S.E from 
+                Amity University, Patna, with a strong foundation in React.js, Node.js, and 
+                cutting-edge development practices.
               </p>
               
               <p className="text-lg text-gray-300 leading-relaxed">
-                I specialize in modern web technologies and enjoy working on projects that 
-                challenge me to learn and grow. My goal is to build applications that not 
-                only look beautiful but also provide seamless user experiences.
+                My journey spans from cybersecurity training at ACMEGRADE to hands-on web 
+                development experience at STUINTERN and The Entrepreneurship Network (TEN). 
+                I specialize in creating responsive, user-friendly applications with a focus 
+                on performance and security.
               </p>
 
               <div className="flex flex-wrap gap-4 mt-8">
@@ -28,10 +29,10 @@ const About = () => {
                   Problem Solver
                 </div>
                 <div className="px-4 py-2 bg-cyan-900/30 rounded-full border border-cyan-500/30 text-cyan-300">
-                  Creative Thinker
+                  Cybersecurity Enthusiast
                 </div>
                 <div className="px-4 py-2 bg-purple-900/30 rounded-full border border-purple-500/30 text-purple-300">
-                  Team Player
+                  AI Explorer
                 </div>
               </div>
             </div>
@@ -43,11 +44,15 @@ const About = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between">
                     <span className="text-gray-400">Location</span>
-                    <span className="text-white">Your City, Country</span>
+                    <span className="text-white">Patna, India</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-gray-400">Experience</span>
-                    <span className="text-white">3+ Years</span>
+                    <span className="text-gray-400">Age</span>
+                    <span className="text-white">21 Years</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-gray-400">Education</span>
+                    <span className="text-white">BTECH-C.S.E (Expected 2026)</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-400">Focus</span>

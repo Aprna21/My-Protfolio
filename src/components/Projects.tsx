@@ -1,34 +1,58 @@
 
 import { useState } from 'react';
-import { Github, Arrow-right } from 'lucide-react';
+import { Github, ArrowRight } from 'lucide-react';
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
 
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and MongoDB. Features include user authentication, payment integration, and admin dashboard.',
+      title: 'Interactive Periodic Table',
+      description: 'A dynamic, educational tool featuring a fully interactive periodic table built with HTML5, CSS3, and JavaScript. Supports real-time element filtering, tooltips, and categorization to enhance learning experiences.',
       image: '/placeholder.svg',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Aprna21',
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      title: 'InfiNews - News Aggregation Platform',
+      description: 'A responsive, modern web-based news aggregator developed using HTML5, CSS3, and JavaScript. Integrated with NewsAPI to fetch real-time news updates with custom filtering by category and keyword.',
       image: '/placeholder.svg',
-      technologies: ['React', 'Firebase', 'Material-UI', 'Socket.io'],
+      technologies: ['HTML5', 'CSS3', 'JavaScript', 'NewsAPI'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Aprna21',
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application with location-based forecasts, interactive maps, and detailed weather analytics.',
+      title: 'MindFlow Encyclopedia - Interactive Learning Platform',
+      description: 'A collaborative learning platform developed with React.js, Node.js, and WebSockets to support real-time updates, modular content linking, and interactive mind-mapping.',
       image: '/placeholder.svg',
-      technologies: ['Vue.js', 'API Integration', 'Chart.js', 'CSS3'],
+      technologies: ['React.js', 'Node.js', 'WebSockets', 'Real-time Updates'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/Aprna21',
+    },
+    {
+      title: 'FinanceWiz - Smart Tax Calculator & Savings Optimizer',
+      description: 'A finance-focused application designed to assist users with tax calculation and savings planning using React.js, TypeScript, and Node.js. Offers visual insights and personalized suggestions.',
+      image: '/placeholder.svg',
+      technologies: ['React.js', 'TypeScript', 'Node.js', 'Chart.js'],
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Aprna21',
+    },
+    {
+      title: 'CareSync - Intelligent Routine Reminder App',
+      description: 'A productivity and wellness-focused application that provides non-intrusive reminders for daily habits. Developed using React.js and TypeScript with offline capabilities and analytics.',
+      image: '/placeholder.svg',
+      technologies: ['React.js', 'TypeScript', 'Service Workers', 'IndexedDB'],
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Aprna21',
+    },
+    {
+      title: 'DevCanvas Portfolio',
+      description: 'A fully customizable portfolio website built using React.js, TypeScript, Tailwind CSS, Framer Motion, and Material-UI. Features drag-and-drop layout editing with theme switching.',
+      image: '/placeholder.svg',
+      technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      liveUrl: '#',
+      githubUrl: 'https://github.com/Aprna21',
     },
   ];
 
@@ -65,7 +89,7 @@ const Projects = () => {
                     href={project.liveUrl}
                     className="p-3 bg-purple-600 rounded-full text-white hover:bg-purple-700 transition-colors"
                   >
-                    <Arrow-right size={20} />
+                    <ArrowRight size={20} />
                   </a>
                   <a
                     href={project.githubUrl}
@@ -99,7 +123,7 @@ const Projects = () => {
                     href={project.liveUrl}
                     className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
                   >
-                    <Arrow-right size={16} />
+                    <ArrowRight size={16} />
                     Live Demo
                   </a>
                   <a

@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +13,11 @@ const Contact = () => {
     e.preventDefault();
     // Handle form submission here
     console.log('Form submitted:', formData);
+    // Create mailto link with form data
+    const subject = `Portfolio Contact from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:aparnagupta.302003@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailtoLink);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -43,15 +48,25 @@ const Contact = () => {
             {/* Social Links */}
             <div className="space-y-4">
               <a
-                href="mailto:your.email@example.com"
+                href="mailto:aparnagupta.302003@gmail.com"
                 className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-lg border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 group"
               >
                 <Mail className="text-purple-400 group-hover:text-purple-300" size={24} />
-                <span className="text-gray-300 group-hover:text-white">your.email@example.com</span>
+                <span className="text-gray-300 group-hover:text-white">aparnagupta.302003@gmail.com</span>
               </a>
 
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="mailto:24f1000747@ds.study.iitm.ac.in"
+                className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-lg border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 group"
+              >
+                <Mail className="text-cyan-400 group-hover:text-cyan-300" size={24} />
+                <span className="text-gray-300 group-hover:text-white">24f1000747@ds.study.iitm.ac.in</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/aparna-gupta-948151369/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-lg border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 group"
               >
                 <Linkedin className="text-cyan-400 group-hover:text-cyan-300" size={24} />
@@ -59,7 +74,9 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://github.com/yourprofile"
+                href="https://github.com/Aprna21"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-lg border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 group"
               >
                 <Github className="text-gray-400 group-hover:text-gray-300" size={24} />
@@ -67,11 +84,11 @@ const Contact = () => {
               </a>
 
               <a
-                href="https://twitter.com/yourprofile"
+                href="tel:+917857056116"
                 className="flex items-center gap-4 p-4 bg-gradient-to-r from-purple-900/20 to-cyan-900/20 rounded-lg border border-purple-500/20 hover:border-purple-500/40 transition-all duration-300 group"
               >
-                <Twitter className="text-blue-400 group-hover:text-blue-300" size={24} />
-                <span className="text-gray-300 group-hover:text-white">Twitter Profile</span>
+                <Phone className="text-green-400 group-hover:text-green-300" size={24} />
+                <span className="text-gray-300 group-hover:text-white">+91 7857056116</span>
               </a>
             </div>
           </div>
@@ -141,7 +158,7 @@ const Contact = () => {
       {/* Footer */}
       <div className="mt-20 pt-8 border-t border-purple-500/20 text-center">
         <p className="text-gray-400">
-          © 2024 Your Name. Made with ❤️ using React & Tailwind CSS
+          © 2024 Aparna Gupta. Made with ❤️ using React & Tailwind CSS
         </p>
       </div>
     </section>

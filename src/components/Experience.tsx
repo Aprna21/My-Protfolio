@@ -2,25 +2,25 @@
 const Experience = () => {
   const experiences = [
     {
-      title: 'Front-End Developer',
-      company: 'Tech Company',
-      period: '2022 - Present',
-      description: 'Developed responsive web applications using React and TypeScript. Collaborated with design teams to implement pixel-perfect UI components.',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Git'],
+      title: 'React JS Developer Intern',
+      company: 'The Entrepreneurship Network (TEN)',
+      period: 'May 2025 - Present',
+      description: 'Developed a personal portfolio web application using React.js, showcasing interactive UI components and responsive design. Gained hands-on experience with modern JavaScript (ES6+), React hooks, and component-based architecture.',
+      technologies: ['React.js', 'JavaScript (ES6+)', 'React Hooks', 'Component Architecture', 'Git'],
     },
     {
-      title: 'Web Developer',
-      company: 'Digital Agency',
-      period: '2021 - 2022',
-      description: 'Built custom websites for clients using modern web technologies. Optimized website performance and implemented SEO best practices.',
-      technologies: ['HTML', 'CSS', 'JavaScript', 'WordPress'],
+      title: 'Web Developer Intern',
+      company: 'STUINTERN',
+      period: 'May 2024 - July 2024',
+      description: 'Developed & optimized responsive web pages using HTML, CSS, and JavaScript. Improved user experience across devices and assisted in debugging front-end issues, reducing error rate and enhancing overall site performance.',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'Debugging'],
     },
     {
-      title: 'Junior Developer',
-      company: 'Startup Inc.',
-      period: '2020 - 2021',
-      description: 'Assisted in developing web applications and learned full-stack development principles. Participated in code reviews and agile development processes.',
-      technologies: ['JavaScript', 'Node.js', 'MongoDB', 'Express'],
+      title: 'Cybersecurity Trainee',
+      company: 'ACMEGRADE',
+      period: 'July 2023 - August 2023',
+      description: 'Covered core principles: CIA Triad, authentication, access control, firewalls, encryption. Learned basics of network security, common attack types (phishing, malware, DDoS). Gained introductory hands-on experience using tools like Wireshark and Kali Linux.',
+      technologies: ['Network Security', 'CIA Triad', 'Wireshark', 'Kali Linux', 'Risk Management'],
     },
   ];
 

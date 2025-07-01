@@ -2,30 +2,45 @@
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend',
+      title: 'Languages',
       skills: [
-        { name: 'React', level: 90 },
+        { name: 'JavaScript', level: 90 },
         { name: 'TypeScript', level: 85 },
-        { name: 'Tailwind CSS', level: 95 },
-        { name: 'Next.js', level: 80 },
-      ],
-    },
-    {
-      title: 'Backend',
-      skills: [
-        { name: 'Node.js', level: 85 },
         { name: 'Python', level: 80 },
-        { name: 'Express.js', level: 85 },
-        { name: 'MongoDB', level: 75 },
+        { name: 'Java', level: 75 },
+        { name: 'SQL', level: 85 },
+        { name: 'C++', level: 70 },
+        { name: 'C', level: 70 },
       ],
     },
     {
-      title: 'Tools & Others',
+      title: 'Frameworks & Libraries',
+      skills: [
+        { name: 'React.js', level: 95 },
+        { name: 'Node.js', level: 85 },
+        { name: 'Tailwind CSS', level: 90 },
+        { name: 'Material-UI', level: 80 },
+        { name: 'Framer Motion', level: 75 },
+      ],
+    },
+    {
+      title: 'Tools & Technologies',
       skills: [
         { name: 'Git', level: 90 },
-        { name: 'Docker', level: 70 },
-        { name: 'AWS', level: 75 },
+        { name: 'VSCode', level: 95 },
+        { name: 'IntelliJ IDEA', level: 80 },
         { name: 'Figma', level: 85 },
+        { name: 'Wireshark', level: 70 },
+        { name: 'Kali Linux', level: 75 },
+      ],
+    },
+    {
+      title: 'Specializations',
+      skills: [
+        { name: 'Full-Stack Development', level: 90 },
+        { name: 'Front-End Engineering', level: 95 },
+        { name: 'Cybersecurity', level: 80 },
+        { name: 'AI & Machine Learning', level: 75 },
       ],
     },
   ];
@@ -37,14 +52,14 @@ const Skills = () => {
           Skills & Expertise
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {skillCategories.map((category, categoryIndex) => (
             <div
               key={category.title}
-              className="bg-gradient-to-br from-purple-900/20 to-cyan-900/20 p-8 rounded-2xl border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-300 animate-fade-in"
+              className="bg-gradient-to-br from-purple-900/20 to-cyan-900/20 p-6 rounded-2xl border border-purple-500/20 backdrop-blur-sm hover:border-purple-500/40 transition-all duration-300 animate-fade-in"
               style={{ animationDelay: `${categoryIndex * 0.2}s` }}
             >
-              <h3 className="text-2xl font-semibold mb-6 text-center text-purple-300">
+              <h3 className="text-xl font-semibold mb-6 text-center text-purple-300">
                 {category.title}
               </h3>
               
@@ -52,8 +67,8 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div key={skill.name} className="space-y-2">
                     <div className="flex justify-between">
-                      <span className="text-gray-300 font-medium">{skill.name}</span>
-                      <span className="text-purple-400">{skill.level}%</span>
+                      <span className="text-gray-300 font-medium text-sm">{skill.name}</span>
+                      <span className="text-purple-400 text-sm">{skill.level}%</span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-2">
                       <div
