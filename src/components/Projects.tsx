@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Github, ArrowRight } from 'lucide-react';
+import { Github } from 'lucide-react';
 
 const Projects = () => {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null);
@@ -9,49 +9,36 @@ const Projects = () => {
     {
       title: 'Interactive Periodic Table',
       description: 'A dynamic, educational tool featuring a fully interactive periodic table built with HTML5, CSS3, and JavaScript. Supports real-time element filtering, tooltips, and categorization to enhance learning experiences.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=600&h=400&fit=crop',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
-      liveUrl: '#',
       githubUrl: 'https://github.com/Aprna21',
     },
     {
       title: 'InfiNews - News Aggregation Platform',
       description: 'A responsive, modern web-based news aggregator developed using HTML5, CSS3, and JavaScript. Integrated with NewsAPI to fetch real-time news updates with custom filtering by category and keyword.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=400&fit=crop',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'NewsAPI'],
-      liveUrl: '#',
       githubUrl: 'https://github.com/Aprna21',
     },
     {
       title: 'MindFlow Encyclopedia - Interactive Learning Platform',
       description: 'A collaborative learning platform developed with React.js, Node.js, and WebSockets to support real-time updates, modular content linking, and interactive mind-mapping.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop',
       technologies: ['React.js', 'Node.js', 'WebSockets', 'Real-time Updates'],
-      liveUrl: '#',
       githubUrl: 'https://github.com/Aprna21',
     },
     {
       title: 'FinanceWiz - Smart Tax Calculator & Savings Optimizer',
       description: 'A finance-focused application designed to assist users with tax calculation and savings planning using React.js, TypeScript, and Node.js. Offers visual insights and personalized suggestions.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop',
       technologies: ['React.js', 'TypeScript', 'Node.js', 'Chart.js'],
-      liveUrl: '#',
       githubUrl: 'https://github.com/Aprna21',
     },
     {
       title: 'CareSync - Intelligent Routine Reminder App',
       description: 'A productivity and wellness-focused application that provides non-intrusive reminders for daily habits. Developed using React.js and TypeScript with offline capabilities and analytics.',
-      image: '/placeholder.svg',
+      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&h=400&fit=crop',
       technologies: ['React.js', 'TypeScript', 'Service Workers', 'IndexedDB'],
-      liveUrl: '#',
-      githubUrl: 'https://github.com/Aprna21',
-    },
-    {
-      title: 'DevCanvas Portfolio',
-      description: 'A fully customizable portfolio website built using React.js, TypeScript, Tailwind CSS, Framer Motion, and Material-UI. Features drag-and-drop layout editing with theme switching.',
-      image: '/placeholder.svg',
-      technologies: ['React.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      liveUrl: '#',
       githubUrl: 'https://github.com/Aprna21',
     },
   ];
@@ -81,16 +68,10 @@ const Projects = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 
-                {/* Overlay Links */}
-                <div className={`absolute inset-0 flex items-center justify-center gap-4 transition-opacity duration-300 ${
+                {/* Overlay Link */}
+                <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 ${
                   hoveredProject === index ? 'opacity-100' : 'opacity-0'
                 }`}>
-                  <a
-                    href={project.liveUrl}
-                    className="p-3 bg-purple-600 rounded-full text-white hover:bg-purple-700 transition-colors"
-                  >
-                    <ArrowRight size={20} />
-                  </a>
                   <a
                     href={project.githubUrl}
                     className="p-3 bg-gray-800 rounded-full text-white hover:bg-gray-700 transition-colors"
@@ -117,21 +98,14 @@ const Projects = () => {
                   ))}
                 </div>
 
-                {/* Links */}
+                {/* GitHub Link */}
                 <div className="flex gap-4">
-                  <a
-                    href={project.liveUrl}
-                    className="flex items-center gap-2 text-cyan-400 hover:text-cyan-300 transition-colors"
-                  >
-                    <ArrowRight size={16} />
-                    Live Demo
-                  </a>
                   <a
                     href={project.githubUrl}
                     className="flex items-center gap-2 text-gray-400 hover:text-gray-300 transition-colors"
                   >
                     <Github size={16} />
-                    Code
+                    View Code
                   </a>
                 </div>
               </div>

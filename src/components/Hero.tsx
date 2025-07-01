@@ -34,14 +34,14 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mb-8 flex justify-center">
             <div className="relative">
-              <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-purple-500 shadow-2xl animate-pulse-glow">
+              <div className="w-48 h-64 md:w-64 md:h-80 rounded-2xl overflow-hidden border-4 border-purple-500 shadow-2xl animate-pulse-glow">
                 <img
                   src="/lovable-uploads/6ec500f8-9bac-4312-9fc0-8a752aff9519.png"
                   alt="Aparna Gupta"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-purple-600 to-cyan-600 opacity-20 animate-pulse"></div>
+              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-purple-600 to-cyan-600 opacity-20 animate-pulse"></div>
             </div>
           </div>
 
