@@ -1,11 +1,10 @@
-
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 
 const Hero = () => {
   const [text, setText] = useState('');
   const [isTyping, setIsTyping] = useState(true);
-  const fullText = 'Full Stack Developer';
+  const fullText = 'Full Stack Web Developer 👩‍💻';
 
   useEffect(() => {
     if (isTyping) {
@@ -31,23 +30,9 @@ const Hero = () => {
     <section className="min-h-screen flex items-center justify-center relative pt-20">
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
-          {/* Profile Image */}
-          <div className="mb-8 flex justify-center">
-            <div className="relative">
-              <div className="w-48 h-64 md:w-64 md:h-80 rounded-2xl overflow-hidden border-4 border-purple-500 shadow-2xl animate-pulse-glow">
-                <img
-                  src="/lovable-uploads/6ec500f8-9bac-4312-9fc0-8a752aff9519.png"
-                  alt="Aparna Gupta"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-purple-600 to-cyan-600 opacity-20 animate-pulse"></div>
-            </div>
-          </div>
-
           {/* Name and Title */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white via-purple-200 to-cyan-200 animate-fade-in">
-            Aparna Gupta
+            Aparna Gupta 
           </h1>
           
           <div className="text-2xl md:text-4xl font-light mb-8 text-purple-300 min-h-[3rem]">
@@ -56,8 +41,7 @@ const Hero = () => {
           </div>
 
           <p className="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in">
-            Passionate about creating innovative solutions with cutting-edge technologies. 
-            Specializing in React.js, Node.js, and modern web development with a focus on cybersecurity and AI.
+          Crafting secure, high-performance web applications with a focus on clean design and seamless user experiences.
           </p>
 
           {/* CTA Buttons */}
@@ -87,10 +71,6 @@ const Hero = () => {
           </button>
         </div>
       </div>
-
-      {/* Background Elements */}
-      <div className="absolute top-1/4 left-10 w-20 h-20 bg-purple-500 rounded-full opacity-10 animate-pulse"></div>
-      <div className="absolute bottom-1/4 right-10 w-32 h-32 bg-cyan-500 rounded-full opacity-10 animate-pulse"></div>
     </section>
   );
 };

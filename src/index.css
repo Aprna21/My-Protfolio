@@ -35,7 +35,6 @@
   
   body {
     @apply bg-background text-foreground;
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
     min-height: 100vh;
   }
   
@@ -85,4 +84,23 @@
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradient-shift 3s ease infinite;
+}
+
+/* Video background optimizations */
+video {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Enhanced text readability over video */
+.text-over-video {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Professional section backgrounds */
+.section-bg {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(139, 69, 255, 0.1);
 }

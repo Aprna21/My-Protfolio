@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Menu } from 'lucide-react';
 
@@ -29,11 +28,7 @@ const Header = ({ activeSection }: HeaderProps) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/20 border-b border-purple-500/20">
       <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-cyan-400 animate-gradient">
-            Portfolio
-          </div>
-
+        <div className="flex items-center justify-center">
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
@@ -53,8 +48,9 @@ const Header = ({ activeSection }: HeaderProps) => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-gray-300 hover:text-purple-400 transition-colors"
+            className="md:hidden p-2 text-gray-300 hover:text-purple-400 transition-colors absolute right-6"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            style={{ top: 16 }}
           >
             <Menu size={24} />
           </button>
@@ -63,7 +59,7 @@ const Header = ({ activeSection }: HeaderProps) => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-4 border-t border-purple-500/20">
-            <div className="flex flex-col space-y-2 mt-4">
+            <div className="flex flex-col space-y-2 mt-4 items-center">
               {navItems.map((item) => (
                 <button
                   key={item.id}
